@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.py-50{
+    padding: 50px 0px;
+}
+.nav-wrap{
+    background-color: #fff;
+    border-bottom: 1px solid #00B158;
+}
+.nav-group{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.nav-items p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 33px;
+    text-align: center;
+    border-radius: 33px;
+}
+.nav-items p:nth-child(1){
+    background-color: #00B158;
+    color: #fff;
+}
+.header{
+    padding: 235px 0px;
+    background-image: url(../img/leo-roza-P_z_xlMGuEk-unsplash.png);
+    background-color: black;
+    opacity: 60;
+}
+.header-content{
+    margin: 0 auto;
+    max-width: 718px;
+}
+
+.header h1{
+    color: #fff;
+    font-size: 44px;
+}
+.header input{
+    max-width: 580px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: url(../img/search.svg);
+}
+.recipes-blk{
+    background-color: #F2F2F2;
+}
+.recipes-blk h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #00B158;
+}
+.section-desc{
+    font-size: 38px;
+    color: #17285A;
+}
+.primary-btn{
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #00B158;
+    border-radius: 25px;
+    outline: none;
+    border: 0px;
+    text-transform: uppercase;
+}
+.recipe-card-wrap{
+
+}
+.recipe-card{
+    width: 343px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.name-content{
+    display: flex;
+    justify-content: space-between;
+}
+.recipe-card .content{
+    padding: 20px;
+}
