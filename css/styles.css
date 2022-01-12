@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
@@ -107,7 +106,13 @@ body {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 3px 6px #00000029;
+  text-decoration: none;
 }
+.recipe-card-wrap a {
+  text-decoration: none;
+  color: #000;
+}
+
 .name-content {
   display: flex;
   justify-content: space-between;
@@ -126,10 +131,6 @@ body {
   height: 163px;
   padding: 0 134px;
 }
-.recipes-blk2 {
-  background-color: #f2f2f2;
-  padding-bottom: 80px;
-}
 .footer_top {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -138,6 +139,24 @@ body {
   border-bottom: 1px solid #ffffff;
   height: 111px;
 }
+@media (max-width: 700px) {
+  .footer {
+    padding: 0px;
+    height: 355px;
+  }
+  .footer_top {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+  }
+}
+.recipes-blk2 {
+  background-color: #f2f2f2;
+  padding-bottom: 80px;
+}
+
+/* @media (max-width: 700px) {
+} */
 .back-footer {
   display: flex;
   column-gap: 35px;
