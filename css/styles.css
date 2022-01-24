@@ -26,13 +26,14 @@ body {
 .nav-group {
   margin: 0 auto;
   max-width: 960px;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 10px;
   display: flex;
   justify-content: space-between;
 }
 .nav-items {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .nav-items p {
   display: flex;
@@ -53,7 +54,8 @@ body {
   padding: 235px 0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/img/leo-roza-P_z_xlMGuEk-unsplash.png");
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 .header-content {
   margin: 0 auto;
@@ -149,14 +151,27 @@ body {
     flex-direction: column;
     height: 250px;
   }
+  .nav-items {
+    display: none;
+  }
+
+  .line {
+    width: 20px;
+    background: rgba(0, 0, 0, 0.863);
+    margin: 1px;
+    height: 5px;
+    border-radius: 25%;
+  }
+  .line_warp {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 .recipes-blk2 {
   background-color: #f2f2f2;
   padding-bottom: 80px;
 }
-
-/* @media (max-width: 700px) {
-} */
 .back-footer {
   display: flex;
   column-gap: 35px;

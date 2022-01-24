@@ -21,6 +21,11 @@
           <p>Home</p>
           <p>Recipe</p>
         </div>
+        <div class="line_warp">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </div>
     </div>
     <section class="add_header">
@@ -41,14 +46,19 @@
           <div class="name_img">
             <input type="text" name="nameRecipe" id="nameRecipe" />
           </div>
-          <div class="title">
-            <label for="recipeImage">Recipe image</label>
+          <div class="name_img title">
+            <label for="mtUpdate">Recipe image</label>
+            <input type="text" id="RecipeImg" name="RecipeName" disabled />
           </div>
-          <div class="name_img">
-            <input type="text" name="recipeImage" id="recipeImage" />
-          </div>
-          <div id="upload_btn">
-            <button>UPLOAD</button>
+          <div class="mt-update">
+            <input
+              type="file"
+              value="Update"
+              id="mtUpdate"
+              accept="image/png, image/jpg"
+              hidden="hidden"
+            />
+            <label id="uploadBtn" for="mtUpdate">UPLOAD</label>
           </div>
           <div class="title">
             <label>Food type</label>

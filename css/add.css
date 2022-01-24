@@ -9,6 +9,7 @@ body {
 .add_nav-items {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .add_nav-items p {
   display: flex;
@@ -19,13 +20,18 @@ body {
   text-align: center;
   border-radius: 33px;
 }
+@media (max-width: 700px) {
+  .add_nav-items {
+    display: none;
+  }
+}
 .add_header {
   display: flex;
   padding: 89px 0px 103px 0px;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/img/leo-roza-P_z_xlMGuEk-unsplash.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 .add_header h1 {
@@ -67,20 +73,6 @@ body {
   outline: none;
   padding: 0 0 0 17px;
 }
-#upload_btn button {
-  width: 130px;
-  height: 40px;
-  border-radius: 25px;
-  border: none;
-  background: #00b158;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-}
-#upload_btn {
-  display: flex;
-  justify-content: flex-end;
-}
 .ingredientReq textarea {
   width: 100%;
   max-width: 466px;
@@ -113,4 +105,27 @@ body {
   font-weight: bold;
   border: none;
   border-radius: 25px;
+}
+.mt-update {
+  text-align: end;
+  max-width: 520px;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.mt-update label {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  width: 86px;
+  text-align: center;
+  font-size: 16px;
+  height: auto;
+  padding: 10px 32px;
+  margin-top: 10px;
+  font-weight: 700;
+  float: right;
 }
